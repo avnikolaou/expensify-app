@@ -95,6 +95,7 @@ class ExpenseForm extends React.Component {
                         isOutsideRange={() => false}
                         displayFormat='DD/MM/YYYY'
                         firstDayOfWeek={1}
+                        showClearDate={true}
                     />
                     <textarea
                         placeholder={"Add a note for your expense (optional)"}
