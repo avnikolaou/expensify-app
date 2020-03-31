@@ -25,6 +25,15 @@ export const removeExpense = ({ id } = {}) => ({
     id
 });
 
+export const startRemoveExpense = ({ id } ={} ) => {
+    return (dispath) => {
+        return database.ref(`expenses/${id}`).remove()
+            .then(() => {
+                dispath(removeExpense({ id }))
+            });
+    }
+};
+
 // EDIT_EXPENSE
 export const editExpense = (id, updates) => ({
     type: 'EDIT_EXPENSE',

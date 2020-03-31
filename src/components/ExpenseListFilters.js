@@ -23,7 +23,7 @@ class ExpenseListFilters extends React.Component {
                 <input
                     type="text"
                     value={this.props.filters.text}
-                    onChange={(e) => {props.dispatch(setTextFilter(e.target.value));
+                    onChange={(e) => {this.props.dispatch(setTextFilter(e.target.value));
                     }}/>
                 <select
                     value={this.props.filters.sortBy}
