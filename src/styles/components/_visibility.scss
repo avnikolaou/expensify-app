@@ -1,0 +1,11 @@
+.hide-for-mobile {
+    @media screen and (max-width: $desktop-breakpoint) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @media screen and (min-width: $desktop-breakpoint - 0.1rem){
+        display: none;
+    }
+}
